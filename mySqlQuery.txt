@@ -1,0 +1,12 @@
+name:_myQuery
+
+USE AdventureWorks2
+SELECT Name 
+	,ProductNumber 
+	,ListPrice as Price 
+FROM Production.Product
+WHERE Name = 'Blade'
+
+name:_sp
+
+EXEC AdventureWorks2.dbo.uspGetEmployeeManagersPerDepartment @BusinessEntityID
